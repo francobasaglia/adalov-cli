@@ -8,7 +8,7 @@
   "scripts": {
     "start": "tsc-watch --onSuccess \"node ./lib/adalov.js \"",
     "build": "tsc --project tsconfig.build.json",
-    "clean": "rm -rf ./coverage ./lib ./node_modules && yarn",
+    "clean": "rm -rf ./coverage ./lib ./node_modules && yarn install",
     "lint": "echo \"No linter defined yet\" && exit 1",
     "test": "echo \"No tests defined yet\" && exit 1",
     "test:coverage": "echo \"No tests coverage defined yet\" && exit 1"
