@@ -1,9 +1,9 @@
-export class AdalovCli {
-    public run(): void {
+export class Adalov {
+    public runCli(): void {
         console.log('Adalov works!');
     }
 }
 
-const adalovCli = new AdalovCli();
+const adalov = new Adalov();
 
-adalovCli.run();
+(() => adalov.runCli())();

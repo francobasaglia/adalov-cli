@@ -10,8 +10,9 @@
     "build": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./coverage ./lib ./node_modules && yarn install",
     "lint": "echo \"No linter defined yet\"",
-    "test": "echo \"No tests defined yet\"",
-    "test:coverage": "echo \"No tests coverage defined yet\""
+    "test": "jest --config=./jestconfig.json",
+    "test:coverage": "jest --config=./jestconfig.json --watch --watchAll --coverage",
+    "test:coverage:report": "live-server --port=9000 --host=127.0.0.1 --open=./coverage/lcov-report/"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,11 @@
   },
   "homepage": "https://github.com/francobasaglia/adalov-cli#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.1",
     "@types/node": "^18.16.3",
+    "jest": "^29.5.0",
+    "live-server": "git+https://github.com/tapio/live-server.git#ad22544",
+    "ts-jest": "^29.1.0",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.0.4"
   }
