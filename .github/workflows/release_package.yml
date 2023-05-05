@@ -7,8 +7,17 @@ on:
   workflow_dispatch:
     inputs:
       release-type:
-        description: 'Release type (one of): patch, minor, major, prepatch, preminor, premajor, prerelease'
+        type: choice
+        description: 'Release type'
         required: true
+        options:
+          - patch
+          - minor
+          - major
+          - prepatch
+          - preminor
+          - premajor
+          - prerelease
 
 jobs:
   release:
