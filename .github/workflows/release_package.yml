@@ -74,7 +74,7 @@ jobs:
       - name: Commit changes
         run: |
           git add -A
-          git commit -m 
+          git commit -m "Release ${{ env.NEW_VERSION }}"
 
       # Publish version
       - name: Publish
