@@ -1,0 +1,31 @@
+{
+  "name": "@adalov/cli",
+  "version": "0.0.0",
+  "bin": {
+    "adalov": "./bin/adalov"
+  },
+  "description": "CLI tool for Adalov projects.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francobasaglia/adalov-cli.git"
+  },
+  "keywords": [
+    "Adalov",
+    "TypeScript",
+    "JavaScript",
+    "NodeJS",
+    "NodeJS framework"
+  ],
+  "author": "Franco Basaglia <francobasaglia94@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francobasaglia/adalov-cli/issues"
+  },
+  "homepage": "https://github.com/francobasaglia/adalov-cli#readme",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.0.4"
+  }
+}
