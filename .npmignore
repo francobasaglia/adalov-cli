@@ -1,5 +1,7 @@
 /.github
+/scripts
 /src
+/test
 .editorconfig
 jestconfig.json
 tsconfig*
