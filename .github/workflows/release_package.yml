@@ -34,13 +34,10 @@ jobs:
           registry-url: https://registry.npmjs.org/
           node-version: '16'
 
-      # Install dependencies. Run linter & test. Build.
-      - name: Install, linter & test, and build
+      # Prepare for publishing.
+      - name: Prepare for publishing
         run: |
-          yarn install
-          yarn lint
-          yarn test
-          yarn build
+          yarn prepare:publish
 
       # Configure Git user name and email
       - name: Git configuration
