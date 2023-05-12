@@ -1,0 +1,18 @@
+[
+  {
+    "name": "@adalov/cli",
+    "dir": "cli",
+    "cmdName": "adalov",
+    "dependencies": {
+      "@adalov/ipc": ""
+    },
+    "peerDependencies": {}
+  },
+  {
+    "name": "@adalov/ipc",
+    "dir": "ipc",
+    "cmdName": "adalov-ipc",
+    "dependencies": {},
+    "peerDependencies": {}
+  }
+]

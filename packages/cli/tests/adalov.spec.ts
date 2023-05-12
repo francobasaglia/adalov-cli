@@ -1,4 +1,4 @@
-import { Adalov } from '../src/adalov';
+import { Adalov } from '../lib/adalov';
 
 describe('AdalovCli entry point', () => {
     let adalov: Adalov;
