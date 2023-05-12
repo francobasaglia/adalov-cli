@@ -4,14 +4,14 @@
   "bin": {
     "adalov": "./bin/adalov"
   },
-  "description": "CLI tool for Adalov projects.",
+  "description": "CLI tool for Adalov projects",
   "scripts": {
-    "start": "tsc-watch --onSuccess \"node ./lib/adalov.js \"",
+    "start": "tsc-watch",
     "build": "tsc --project tsconfig.build.json",
     "lint": "echo \"No linter defined yet\"",
     "test": "jest --config=./jestconfig.json",
     "test:coverage": "jest --config=./jestconfig.json --watch --watchAll --coverage",
-    "test:coverage:report": "live-server --port=9000 --host=127.0.0.1 --open=./coverage/lcov-report/",
+    "test:report": "live-server --port=9000 --host=127.0.0.1 --open=./coverage/lcov-report/",
     "clean": "sh ./scripts/clean.sh",
     "prepare:publish": "sh ./scripts/prepare-publish.sh"
   },
@@ -39,7 +39,7 @@
     "@types/jest": "^29.5.1",
     "@types/node": "^18.16.3",
     "jest": "^29.5.0",
-    "live-server": "git+https://github.com/tapio/live-server.git#ad22544",
+    "live-server": "1.2.1",
     "ts-jest": "^29.1.0",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.0.4"
