@@ -4,7 +4,7 @@
 rm -rf ./node_modules
 
 # Clean output directory
-rm -rf ./lib
+rm -rf ./out-pck
 
 # Clean test coverage output directory
 rm -rf ./coverage

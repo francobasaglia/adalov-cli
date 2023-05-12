@@ -3,7 +3,7 @@
     "^.+\\.ts?$": "ts-jest"
   },
   "testEnvironment": "node",
-  "testRegex": "/test/.*\\.spec\\.ts$",
+  "testRegex": "/packages/(cli|ipc)?/tests/.*\\.spec\\.(ts|tsx)$",
   "moduleFileExtensions": [
     "ts",
     "js"
@@ -13,6 +13,7 @@
     "text-summary"
   ],
   "collectCoverageFrom": [
-    "src/**/*.ts"
+    "packages/**/*.ts",
+    "!packages/**/index.ts"
   ]
 }

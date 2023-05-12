@@ -37,7 +37,7 @@ jobs:
       # Prepare for publishing.
       - name: Prepare for publishing
         run: |
-          yarn prepare:publish
+          yarn prepare:build --skipClean
 
       # Configure Git user name and email
       - name: Git configuration
@@ -73,11 +73,26 @@ jobs:
           git add -A
           git commit -m "Release ${{ env.NEW_VERSION }}"
 
-      # Publish version
+      # Prepare packages
+      - name: Prepare packages
+        run: |
+          yarn prepare:packages
+
+      # Publishing @adalov/cli
       - name: Publish
-        run: npm publish --verbose --access public --tag ${{ env.RELEASE_TAG }}
+        run: |
+          cd out-pck/cli
+          npm publish --verbose --access public --tag ${{ env.RELEASE_TAG }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
+
+      # Publishing @adalov/ipc
+      # - name: Publish
+      #   run: |
+      #     cd out-pck/ipc
+      #     npm publish --verbose --access public --tag ${{ env.RELEASE_TAG }}
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
         
       # Push repository changes
       - name: Push changes to repository

@@ -9,8 +9,8 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "declaration": true,
-    "sourceMap": false,
-    "outDir": "./lib",
+    "sourceMap": true,
+    "outDir": "./out-pck",
     "removeComments": false,
     "importHelpers": true,
     "esModuleInterop": true,
@@ -35,8 +35,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "src",
-    "src/schemas/*.json"
+    "packages",
+    "packages/**/lib/schemas/*.json"
   ],
   "exclude": [
     "node_modules",

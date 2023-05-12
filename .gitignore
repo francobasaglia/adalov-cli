@@ -3,7 +3,7 @@
 
 # Outputs
 /coverage
-/lib
+/out-pck
 
 # Dependencies
 **/node_modules
