@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@adalov/common@^0.5.14":
+  version "0.5.14"
+  resolved "https://registry.yarnpkg.com/@adalov/common/-/common-0.5.14.tgz#0bdafe56173c9c4789affef19add392b6263f0c3"
+  integrity sha512-bkLtNdRZlRc3VKi588NnZK/iU7lcwp6zfvT0O/94YTW4HwjLE64tYS+zbXkvKbWkdjz2qtrI67O3W2vaoZxuSQ==
+  dependencies:
+    tslib "^2.5.0"
+
+"@adalov/core@^0.5.14":
+  version "0.5.14"
+  resolved "https://registry.yarnpkg.com/@adalov/core/-/core-0.5.14.tgz#91fe2f794093798d33aa0924de8f93f1f79a5c4e"
+  integrity sha512-+mTqnt/SHDvafiUNYi2P3KO15O2KMRSaxSc4sRdXPDgc2L4zvzuJGzhzA+XmvtWiUnea7iN+fPKZpBnqtf8Z0A==
+  dependencies:
+    tslib "^2.5.0"
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"

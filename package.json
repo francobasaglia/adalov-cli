@@ -33,10 +33,9 @@
     "url": "https://github.com/francobasaglia/adalov-cli/issues"
   },
   "homepage": "https://github.com/francobasaglia/adalov-cli#readme",
-  "dependencies": {
-    "tslib": "^2.5.0"
-  },
   "devDependencies": {
+    "@adalov/common": "^0.5.14",
+    "@adalov/core": "^0.5.14",
     "@types/jest": "^29.5.1",
     "@types/node": "^18.16.3",
     "jest": "^29.5.0",

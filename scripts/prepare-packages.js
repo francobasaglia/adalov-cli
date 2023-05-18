@@ -22,7 +22,7 @@ const getDependencies = (packageRoot, dependencies) => {
 };
 
 const writePackageJson = (projectRoot, packageConfig, packageRoot) => {
-    const dependencies = getDependencies(packageRoot, { tslib: packageRoot.dependencies.tslib, ...packageConfig.dependencies });
+    const dependencies = getDependencies(packageRoot, packageConfig.dependencies);
     const peerDependencies = getDependencies(packageRoot, packageConfig.peerDependencies);
 
     const content = {

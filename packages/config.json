@@ -4,7 +4,8 @@
     "dir": "cli",
     "cmdName": "adalov",
     "dependencies": {
-      "@adalov/ipc": ""
+      "@adalov/common": "^0.5.14",
+      "@adalov/core": "^0.5.14"
     },
     "peerDependencies": {}
   },
