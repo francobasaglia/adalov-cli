@@ -1,9 +1,9 @@
+import { Logger } from '@adalov/common';
+
 export class Adalov {
+    constructor(private logger: Logger) {}
+
     public runCli(): void {
-        console.log('Adalov works!');
+        this.logger.success('Adalov works!');
     }
 }
-
-const adalov = new Adalov();
-
-(() => adalov.runCli())();
